@@ -1,0 +1,6 @@
+requests
+pytest
+pytest-html
+python-dotenv
+# optional UI smoke test:
+# pytest-playwright

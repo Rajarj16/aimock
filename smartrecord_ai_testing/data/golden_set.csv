@@ -1,0 +1,11 @@
+id,category,query,patient_id,expected_doc,expected_page,notes
+G01,exact,paracetamol,P001,rec_001.pdf,3,EXAMPLE ROW - replace with a real doc/page from the test environment
+G02,exact,penicillin allergy,P001,rec_001.pdf,4,EXAMPLE
+G03,brand_generic,Dolo,P001,rec_001.pdf,3,EXAMPLE - brand name -> generic
+G04,brand_generic,acetaminophen,P002,rec_003.pdf,2,EXAMPLE
+G05,synonym,high blood pressure,P001,rec_001.pdf,2,EXAMPLE
+G06,abbreviation,BP,P001,rec_001.pdf,2,EXAMPLE
+G07,typo,paracetmol,P001,rec_001.pdf,3,EXAMPLE
+G08,natural_language,patient allergic to penicillin,P001,rec_001.pdf,4,EXAMPLE
+G09,negative,xyzabc,P001,,,EXAMPLE - gibberish should return nothing
+G10,security,appendectomy,P001,,,EXAMPLE - another patient's record must NOT appear
