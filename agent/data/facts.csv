@@ -1,0 +1,13 @@
+fact_id,doc,page,patient_id,key_terms,description
+F01,rec_001.pdf,2,P001,blood pressure;BP;hypertension;high blood pressure,Vitals page: BP 150/95
+F02,rec_001.pdf,3,P001,Dolo;paracetamol;acetaminophen,Prescription: Dolo 650 mg (paracetamol)
+F03,rec_001.pdf,4,P001,penicillin allergy;amoxicillin,Allergy page: penicillin
+F04,rec_002.pdf,1,P001,HbA1c;diabetes;blood glucose,Lab: HbA1c and fasting glucose
+F05,rec_002.pdf,2,P001,cholesterol;lipid profile;statin,Lipid profile
+F06,rec_003.pdf,1,P002,migraine;headache,Presenting complaint: migraine
+F07,rec_003.pdf,2,P002,Crocin;acetaminophen;sumatriptan,Prescription: Crocin (acetaminophen)
+F08,rec_003.pdf,3,P002,appendectomy;surgery;discharge summary,Discharge: appendectomy
+F09,rec_005.pdf,1,P003,myocardial infarction;heart attack;ECG,Admission: myocardial infarction
+F10,rec_005.pdf,2,P003,clopidogrel;aspirin;metoprolol,Cardiac medications
+F11,rec_004.pdf,1,P002,cardiomegaly;chest x-ray,Chest X-ray report
+F12,rec_004.pdf,2,P002,sulfa allergy;allergy,Allergy page: sulfa

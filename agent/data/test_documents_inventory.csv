@@ -1,0 +1,3 @@
+doc,patient_id,page,what_is_on_this_page,reviewed_by
+rec_001.pdf,P001,3,Prescription: Dolo 650 mg (paracetamol),EXAMPLE
+rec_001.pdf,P001,4,Penicillin allergy,EXAMPLE

@@ -1,0 +1,12 @@
+# Checklist: what to ask Dev before you start
+- [ ] Test environment URL + how to authenticate (token / login / VPN)
+- [ ] Search API endpoint, sample request and response JSON (or Swagger link)
+- [ ] Which response fields hold: document name, page number, patient/record id, relevance score
+- [ ] Synthetic / de-identified documents loaded in the TEST environment (list of files + patients)
+- [ ] How many results are returned (top 5? 10?) and is there a relevance threshold
+- [ ] Embedding model + vector DB used; chunk size (one page? paragraph?)
+- [ ] Is there a keyword fallback, or purely semantic?
+- [ ] How are new documents indexed; can you trigger a re-index for regression runs
+- [ ] How access control works (patient/user scoping) - needed for the leak tests
+- [ ] Is the model/config versioned, so each scorecard can be tagged with a version?
+- [ ] Agreement on quality targets (hit rate, MRR, latency)
