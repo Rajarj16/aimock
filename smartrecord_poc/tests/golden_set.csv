@@ -1,0 +1,43 @@
+id,category,query,patient_id,expected_doc,expected_page,notes
+G01,exact,paracetamol,P001,rec_001.pdf,3,literal word in the page
+G02,exact,penicillin allergy,P001,rec_001.pdf,4,
+G03,exact,HbA1c,P001,rec_002.pdf,1,
+G04,exact,appendectomy,P002,rec_003.pdf,3,
+G05,exact,clopidogrel,P003,rec_005.pdf,2,
+G06,exact,cardiomegaly,P002,rec_004.pdf,1,
+G07,brand_generic,Dolo,P001,rec_001.pdf,3,brand name -> generic paracetamol page
+G08,brand_generic,Dolo 650,P001,rec_001.pdf,3,
+G09,brand_generic,acetaminophen,P002,rec_003.pdf,2,US name for paracetamol
+G10,brand_generic,Crocin,P002,rec_003.pdf,2,
+G11,brand_generic,paracetamol dosage,P001,rec_001.pdf,3,
+G12,synonym,high blood pressure,P001,rec_001.pdf,2,
+G13,synonym,hypertension,P001,rec_001.pdf,2,concept lives on vitals page
+G14,synonym,diabetes lab results,P001,rec_002.pdf,1,
+G15,synonym,cholesterol,P001,rec_002.pdf,2,
+G16,synonym,headache,P002,rec_003.pdf,1,
+G17,synonym,surgery,P002,rec_003.pdf,3,
+G18,synonym,x-ray report,P002,rec_004.pdf,1,
+G19,abbreviation,BP,P001,rec_001.pdf,2,
+G20,abbreviation,BP readings,P003,rec_005.pdf,2,
+G21,abbreviation,HTN,P001,rec_001.pdf,2,abbreviation - likely weak spot
+G22,abbreviation,MI,P003,rec_005.pdf,1,abbreviation - likely weak spot
+G23,abbreviation,ECG findings,P003,rec_005.pdf,1,
+G24,typo,Dollo,P001,rec_001.pdf,3,
+G25,typo,paracetmol,P001,rec_001.pdf,3,
+G26,typo,penicilin alergy,P001,rec_001.pdf,4,
+G27,typo,diabeetes,P001,rec_002.pdf,1,
+G28,typo,migrane,P002,rec_003.pdf,1,
+G29,natural_language,patient allergic to penicillin,P001,rec_001.pdf,4,
+G30,natural_language,what medicine was given for fever,P001,rec_001.pdf,3,
+G31,natural_language,show me the blood sugar report,P001,rec_002.pdf,1,"sugar vs glucose - likely weak spot"
+G32,natural_language,did the patient have a heart attack,P003,rec_005.pdf,1,likely weak spot
+G33,natural_language,medications after cardiac event,P003,rec_005.pdf,2,
+G34,natural_language,follow up instructions after discharge,P003,rec_005.pdf,3,
+G35,natural_language,which drugs is the patient on,P003,rec_005.pdf,2,
+G36,negative,xyzabc,P001,,,gibberish should return nothing
+G37,negative,spaceship engine repair,P001,,,unrelated topic
+G38,negative,cancer chemotherapy,P001,,,not in this patient's records
+G39,negative,pizza recipe,P002,,,
+G40,security,appendectomy,P001,,,P002's record must NOT appear for P001
+G41,security,myocardial infarction,P001,,,P003's record must NOT appear for P001
+G42,security,sulfa allergy,P003,,,P002's record must NOT appear for P003

@@ -1,0 +1,6 @@
+flask
+pytest
+requests
+pytest-html
+# optional UI smoke test:
+# pytest-playwright

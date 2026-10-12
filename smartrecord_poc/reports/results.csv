@@ -1,0 +1,43 @@
+id,category,query,expected_doc,expected_page,top_hit,rank,passed,latency_ms,notes
+G01,exact,paracetamol,rec_001.pdf,3,rec_001.pdf p3,1,True,5.9,literal word in the page
+G02,exact,penicillin allergy,rec_001.pdf,4,rec_001.pdf p4,1,True,2.1,
+G03,exact,HbA1c,rec_002.pdf,1,rec_002.pdf p1,1,True,2.0,
+G04,exact,appendectomy,rec_003.pdf,3,rec_003.pdf p3,1,True,1.7,
+G05,exact,clopidogrel,rec_005.pdf,2,rec_005.pdf p2,1,True,2.4,
+G06,exact,cardiomegaly,rec_004.pdf,1,rec_004.pdf p1,1,True,2.5,
+G07,brand_generic,Dolo,rec_001.pdf,3,rec_001.pdf p3,1,True,1.5,brand name -> generic paracetamol page
+G08,brand_generic,Dolo 650,rec_001.pdf,3,rec_001.pdf p3,1,True,2.1,
+G09,brand_generic,acetaminophen,rec_003.pdf,2,rec_003.pdf p2,1,True,1.7,US name for paracetamol
+G10,brand_generic,Crocin,rec_003.pdf,2,rec_003.pdf p2,1,True,2.2,
+G11,brand_generic,paracetamol dosage,rec_001.pdf,3,rec_001.pdf p3,1,True,2.0,
+G12,synonym,high blood pressure,rec_001.pdf,2,rec_001.pdf p2,1,True,2.0,
+G13,synonym,hypertension,rec_001.pdf,2,rec_001.pdf p2,1,True,1.8,concept lives on vitals page
+G14,synonym,diabetes lab results,rec_002.pdf,1,rec_002.pdf p1,1,True,2.3,
+G15,synonym,cholesterol,rec_002.pdf,2,rec_002.pdf p2,1,True,1.9,
+G16,synonym,headache,rec_003.pdf,1,rec_003.pdf p1,1,True,2.2,
+G17,synonym,surgery,rec_003.pdf,3,rec_003.pdf p3,1,True,1.6,
+G18,synonym,x-ray report,rec_004.pdf,1,rec_004.pdf p1,1,True,1.9,
+G19,abbreviation,BP,rec_001.pdf,2,rec_001.pdf p2,1,True,1.5,
+G20,abbreviation,BP readings,rec_005.pdf,2,rec_005.pdf p2,1,True,3.1,
+G21,abbreviation,HTN,rec_001.pdf,2,-,,False,2.3,abbreviation - likely weak spot
+G22,abbreviation,MI,rec_005.pdf,1,-,,False,1.9,abbreviation - likely weak spot
+G23,abbreviation,ECG findings,rec_005.pdf,1,rec_005.pdf p1,1,True,1.7,
+G24,typo,Dollo,rec_001.pdf,3,rec_001.pdf p3,1,True,2.1,
+G25,typo,paracetmol,rec_001.pdf,3,rec_001.pdf p3,1,True,1.8,
+G26,typo,penicilin alergy,rec_001.pdf,4,rec_001.pdf p4,1,True,2.0,
+G27,typo,diabeetes,rec_002.pdf,1,rec_002.pdf p1,1,True,1.8,
+G28,typo,migrane,rec_003.pdf,1,rec_003.pdf p1,1,True,2.2,
+G29,natural_language,patient allergic to penicillin,rec_001.pdf,4,rec_001.pdf p4,1,True,1.9,
+G30,natural_language,what medicine was given for fever,rec_001.pdf,3,rec_001.pdf p3,1,True,2.1,
+G31,natural_language,show me the blood sugar report,rec_002.pdf,1,rec_002.pdf p1,1,True,2.4,sugar vs glucose - likely weak spot
+G32,natural_language,did the patient have a heart attack,rec_005.pdf,1,-,,False,2.1,likely weak spot
+G33,natural_language,medications after cardiac event,rec_005.pdf,2,rec_005.pdf p2,1,True,2.3,
+G34,natural_language,follow up instructions after discharge,rec_005.pdf,3,rec_005.pdf p3,1,True,2.4,
+G35,natural_language,which drugs is the patient on,rec_005.pdf,2,-,,False,1.9,
+G36,negative,xyzabc,,,-,,True,1.7,gibberish should return nothing
+G37,negative,spaceship engine repair,,,-,,True,2.2,unrelated topic
+G38,negative,cancer chemotherapy,,,-,,True,2.0,not in this patient's records
+G39,negative,pizza recipe,,,-,,True,2.6,
+G40,security,appendectomy,,,-,,True,2.2,P002's record must NOT appear for P001
+G41,security,myocardial infarction,,,-,,True,1.5,P003's record must NOT appear for P001
+G42,security,sulfa allergy,,,-,,True,1.8,P002's record must NOT appear for P003

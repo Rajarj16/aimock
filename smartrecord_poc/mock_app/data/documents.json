@@ -1,0 +1,16 @@
+[
+ {"doc":"rec_001.pdf","patient_id":"P001","page":1,"text":"Patient Ravi Kumar, 54 year old male. Chief complaint fever and body ache for 3 days. History of hypertension and type 2 diabetes."},
+ {"doc":"rec_001.pdf","patient_id":"P001","page":2,"text":"Vitals: Blood pressure 150/95 mmHg, pulse 88 bpm, temperature 101 F, weight 78 kg."},
+ {"doc":"rec_001.pdf","patient_id":"P001","page":3,"text":"Prescription: Tab Dolo 650 mg (paracetamol) three times daily for 3 days. Tab Telmisartan 40 mg once daily."},
+ {"doc":"rec_001.pdf","patient_id":"P001","page":4,"text":"Allergies: Penicillin allergy documented, rash and swelling. Avoid amoxicillin."},
+ {"doc":"rec_002.pdf","patient_id":"P001","page":1,"text":"Lab report: HbA1c 8.2 percent, fasting blood glucose 162 mg/dL. Indicates poor glycemic control, diabetes mellitus."},
+ {"doc":"rec_002.pdf","patient_id":"P001","page":2,"text":"Lipid profile: total cholesterol 220 mg/dL, LDL 140 mg/dL. Advised statin therapy, atorvastatin 10 mg."},
+ {"doc":"rec_003.pdf","patient_id":"P002","page":1,"text":"Patient Meena Iyer, 41 year old female. Presented with migraine headache and nausea."},
+ {"doc":"rec_003.pdf","patient_id":"P002","page":2,"text":"Prescription: Tab Crocin (acetaminophen) 500 mg as needed for pain. Sumatriptan 50 mg at onset of migraine."},
+ {"doc":"rec_003.pdf","patient_id":"P002","page":3,"text":"Discharge summary: Appendectomy performed laparoscopically. Recovery uneventful. Follow up in 2 weeks."},
+ {"doc":"rec_004.pdf","patient_id":"P002","page":1,"text":"Chest X-ray report: No pneumonia. Mild cardiomegaly noted. Lungs clear."},
+ {"doc":"rec_004.pdf","patient_id":"P002","page":2,"text":"Allergies: Sulfa drug allergy. No known food allergies."},
+ {"doc":"rec_005.pdf","patient_id":"P003","page":1,"text":"Patient John Mathew, 63 year old male. Admitted with myocardial infarction. ECG shows ST elevation."},
+ {"doc":"rec_005.pdf","patient_id":"P003","page":2,"text":"Medications: Aspirin 75 mg, clopidogrel 75 mg, metoprolol 25 mg. Blood pressure 130/85 mmHg."},
+ {"doc":"rec_005.pdf","patient_id":"P003","page":3,"text":"Discharge advice: low salt diet, cardiac rehabilitation, follow up with cardiologist in 1 week."}
+]
