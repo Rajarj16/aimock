@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What medications is the patient currently prescribed?",
+    "record_id": "record_0042",
+    "expected_evidence_snippets": [
+      "Paracetamol 500mg BD",
+      "Metformin 500mg OD"
+    ],
+    "notes": "Answer must cite exactly these, nothing fabricated"
+  },
+  {
+    "question": "Does the patient have a documented allergy to penicillin?",
+    "record_id": "record_0017",
+    "expected_evidence_snippets": [],
+    "expected_answer_type": "negative",
+    "notes": "No allergy documented in this record - tests whether the model correctly says 'not found' instead of hallucinating one"
+  },
+  {
+    "question": "What was the admission diagnosis?",
+    "record_id": "record_0009",
+    "expected_evidence_snippets": [
+      "Admitting diagnosis: Acute MI"
+    ],
+    "notes": "Tests whether retrieval correctly resolves the same 'MI' ambiguity as the search test"
+  }
+]

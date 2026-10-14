@@ -1,0 +1,17 @@
+[
+  {
+    "query": "Dolo",
+    "expected_doc_ids": ["record_0042"],
+    "notes": "Brand name for paracetamol - tests whether the KG/ontology layer resolves brand to generic (UMLS/Rxnorm)"
+  },
+  {
+    "query": "type 2 diabetes",
+    "expected_doc_ids": ["record_0017", "record_0033"],
+    "notes": "Common condition, tests basic semantic match"
+  },
+  {
+    "query": "MI",
+    "expected_doc_ids": ["record_0009"],
+    "notes": "Ambiguous abbreviation (myocardial infarction vs other uses) - tests disambiguation"
+  }
+]
